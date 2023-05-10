@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li>
+                <form action="/logout" method="POST">
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to the Dashboard, <%= user.name %>!</h1>
+    </main>
+</body>
+</html>
